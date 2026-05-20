@@ -201,7 +201,7 @@ const joueursInitiaux = [
         image: "img/Marc Bernal.png"
     },
 
-    // ── ATTAQUANTS ────────────────────────────────────────────────
+    // ── ATTAQUANTS ──────────────────────────────────────────────
     {
         id: 19,
         nom: "Ferran Torres",

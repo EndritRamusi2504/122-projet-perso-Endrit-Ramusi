@@ -392,7 +392,7 @@ input::placeholder {
   gap: 0.3rem;
 }
 
-/* Champ qui prend toute la largeur */
+/* Champ qui prend toute la largeu */
 .form-group--full {
   grid-column: 1 / -1;
 }
