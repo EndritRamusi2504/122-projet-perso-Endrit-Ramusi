@@ -1,20 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon projet 122</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barça Squad — Gestion des joueurs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts : Barlow Condensed pour les titres, Barlow pour le corps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Barça4ever</h1>
-  </header>
 
-  <main>
-    <ul id="list"></ul>
-  </main>
+<!-- ===== EN-TÊTE ===== -->
+<header class="site-header">
+    <div class="header-inner">
+        <!-- Logo textuel du club -->
+        <div class="logo">
+            <span class="logo-badge">FCB</span>
+            <div class="logo-text">
+                <span class="logo-title">Barça Squad</span>
+                <span class="logo-sub">Gestionnaire de joueurs</span>
+            </div>
+        </div>
+        <!-- Compteur de joueurs mis à jour dynamiquement -->
+        <div class="header-stats">
+            <span id="compteur-joueurs">0 joueurs</span>
+        </div>
+    </div>
+</header>
 
-  <script src="js/script.js"></script>
+<!-- ===== NAVIGATION / CONTRÔLES ===== -->
+<nav class="controls-bar" aria-label="Contrôles de la liste">
+    <div class="controls-inner">
+
+        <!-- Recherche en temps réel -->
+        <div class="control-group">
+            <label for="recherche" class="sr-only">Rechercher un joueur</label>
+            <div class="input-icon-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
+                </svg>
+                <input
+                        type="search"
+                        id="recherche"
+                        placeholder="Rechercher un joueur…"
+                        autocomplete="off"
+                />
+            </div>
+        </div>
+
+        <!-- Filtre par poste -->
+        <div class="control-group">
+            <label for="filtre-poste" class="sr-only">Filtrer par poste</label>
+            <select id="filtre-poste">
+                <option value="">Tous les postes</option>
+                <option value="Gardien">Gardien</option>
+                <option value="Défenseur">Défenseur</option>
+                <option value="Milieu">Milieu</option>
+                <option value="Attaquant">Attaquant</option>
+            </select>
+        </div>
+
+        <!-- Tri -->
+        <div class="control-group">
+            <label for="tri" class="sr-only">Trier par</label>
+            <select id="tri">
+                <option value="nom">Trier par nom</option>
+                <option value="numero">Trier par numéro</option>
+                <option value="age">Trier par âge</option>
+                <option value="note">Trier par note</option>
+            </select>
+        </div>
+
+        <!-- Bouton ouvrir formulaire d'ajout -->
+        <button id="btn-ouvrir-formulaire" class="btn btn-primary" aria-expanded="false" aria-controls="section-formulaire">
+            + Ajouter un joueur
+        </button>
+
+    </div>
+</nav>
+
+<!-- ===== CONTENU PRINCIPAL ===== -->
+<main class="main-content">
+
+    <!-- Formulaire d'ajout / modification (masqué par défaut) -->
+    <section id="section-formulaire" class="form-section" aria-hidden="true">
+        <div class="form-card">
+            <h2 id="form-titre">Ajouter un joueur</h2>
+
+            <!-- id caché pour la modification -->
+            <input type="hidden" id="joueur-id" />
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="f-nom">Nom complet *</label>
+                    <input type="text" id="f-nom" placeholder="ex : Robert Lewandowski" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="f-numero">Numéro *</label>
+                    <input type="number" id="f-numero" min="1" max="99" placeholder="ex : 9" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="f-poste">Poste *</label>
+                    <select id="f-poste" required>
+                        <option value="">Choisir…</option>
+                        <option value="Gardien">Gardien</option>
+                        <option value="Défenseur">Défenseur</option>
+                        <option value="Milieu">Milieu</option>
+                        <option value="Attaquant">Attaquant</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="f-nationalite">Nationalité *</label>
+                    <input type="text" id="f-nationalite" placeholder="ex : Espagne" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="f-age">Âge *</label>
+                    <input type="number" id="f-age" min="15" max="45" placeholder="ex : 25" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="f-note">Note (1–99) *</label>
+                    <input type="number" id="f-note" min="1" max="99" placeholder="ex : 88" required />
+                </div>
+
+                <div class="form-group form-group--full">
+                    <label for="f-image">URL de l'image (optionnel)</label>
+                    <input type="url" id="f-image" placeholder="https://…" />
+                </div>
+
+            </div>
+
+            <!-- Boutons du formulaire -->
+            <div class="form-actions">
+                <button type="button" id="btn-soumettre" class="btn btn-primary">Ajouter</button>
+                <button type="button" id="btn-annuler" class="btn btn-ghost">Annuler</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message si aucun joueur trouvé -->
+    <p id="message-vide" class="empty-message" hidden>
+        Aucun joueur ne correspond à votre recherche.
+    </p>
+
+    <!-- Grille des cartes joueurs -->
+    <div id="grille-joueurs" class="players-grid" role="list" aria-label="Liste des joueurs">
+        <!-- Les cartes sont injectées ici par JavaScript -->
+    </div>
+
+</main>
+
+<!-- ===== PIED DE PAGE ===== -->
+<footer class="site-footer">
+    <p>Barça Squad &mdash; Projet JavaScript &copy; 2025</p>
+</footer>
+
+<!-- Notification toast (feedback utilisateur) -->
+<div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ===== SCRIPT PRINCIPAL ===== -->
+<script src="js/script.js"></script>
 </body>
 </html>

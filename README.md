@@ -1,23 +1,27 @@
 # Mon projet 122
 
-Projet JavaScript — Cours 122 (ESIG)
+Projet Javascript — Cours 122 (ESIG)
+<summary> Projet "Barça4ever" </summary>
 
 ## Description
+Barça4ever est un projet personnel réalisé en HTML, CSS et JavaScript.  
+Le site permet de visualiser et gérer l'équipe du Fc Barcelone gérer.
 
-[Décris ton projet ici : quel type de données tu gères et pourquoi tu as choisi cette ressource]
 
 ## Lien GitHub Pages
 
-[Colle ici le lien de ton site en ligne]
+https://github.com/EndritRamusi2504/122-projet-perso-Endrit-Ramusi
 
 ## Fonctionnalités
 
-- [ ] Affichage dynamique de la liste
-- [ ] Tri par plusieurs critères
-- [ ] Recherche en temps réel
-- [ ] Ajout via formulaire
-- [ ] Suppression d'éléments
-- [ ] Responsive (mobile + desktop)
+- Affichage dynamique de la liste des joueurs
+- Tri par différents critères
+- Recherche en temps réel
+- Ajout d’un joueur via un formulaire
+- Suppression d’un joueur
+- Modification d’un joueur existant
+- Filtrage par poste
+- Responsive design
 
 ## Captures d'écran
 
