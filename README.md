@@ -1,7 +1,7 @@
 # Mon projet 122
 
 Projet Javascript — Cours 122 (ESIG)
-<summary> Projet "Barça4ever" </summary>
+<summary> Projet "Barça squad" </summary>
 
 ## Description
 Barça4ever est un projet personnel réalisé en HTML, CSS et JavaScript.  
