@@ -197,8 +197,7 @@ function supprimerJoueur(id) {
 
     const nom = joueurs[idx].nom;
     joueurs.splice(idx, 1);
-    renderJoueurs();
-    afficherToast(`${nom} a été supprimé.`, 'danger');
+    renderJoueurs();    afficherToast(`${nom} a été supprimé.`, 'danger');
 }
 
 function ouvrirModification(id) {
