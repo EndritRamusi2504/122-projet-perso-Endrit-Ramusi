@@ -25,7 +25,7 @@ https://github.com/EndritRamusi2504/122-projet-perso-Endrit-Ramusi
 
 ## Captures d'écran
 
-[Ajoute des captures de ton projet ici]
+
 
 ## Transparence IA
 
