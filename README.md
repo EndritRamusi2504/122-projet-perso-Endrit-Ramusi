@@ -34,10 +34,12 @@ Ajout de joueur
 
 Structure d'un joueur, avec possibilité de le modifier ou de le supprimer, je lui ai ajouter une note pour le fun, son numéro de maillot et son poste.
 ![img_3.png](img_3.png)
+
 ## Transparence IA
 J'ai utilisé Claude et ChatGPT tout au long de ce projet. Ces outils m'ont aidé lorsque je rencontrais des erreurs et des bugs, pour restructurer mon code, pour trouver et structurer mes idées, pour savoir comment démarrer certaines fonctionnalités et pour comprendre comment faire les choses que je ne savais pas encore faire. Je les ai utilisés de manière pédagogique : l'IA m'expliquait, je comprenais, et c'est moi qui appliquais ensuite. Je suis fier de cette façon de travailler car en 2026, savoir bien utiliser l'IA est une compétence de plus en plus demandée, et ce projet m'a permis de vraiment la développer.
 Donc il y a l'aide de l'ia mais pas pour faire le travail à ma place, mais pour m'aider à progresser et à apprendre. Je voulais être transparent sur ce point, car je pense que c'est important de montrer comment j'ai utilisé l'IA de manière intelligente et réfléchie, plutôt que de prétendre que j'ai tout fait moi-même ou que l'IA a tout fait pour moi.
 J'espere que cela se remarque car j'ai une peur par rapport au moment ou l'ia a juste restructurer mon code et m'a dit que c'était mieux de faire comme ça, j'avais peur que cela soit considéré comme de l'abus d'usage de l'ia, mais je pense que c'est une bonne utilisation de l'ia, car elle m'a aidé à comprendre les bonnes pratiques en JavaScript et à rendre mon code plus lisible et mieux organisé, ce qui est une compétence importante à développer en tant que développeur.
+
 ### Outils utilisés
 J'ai utilisé deux outils d'IA tout au long du projet :
 
