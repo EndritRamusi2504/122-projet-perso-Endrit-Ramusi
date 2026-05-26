@@ -6,10 +6,10 @@ const joueursInitiaux = [
     { id: 2, nom: "Wojciech Szczęsny", poste: "Gardien", nationalite: "Pologne", numero: 25, age: 35, note: 83, image: "img/wojciech-szczesny.png" },
 
     // Défenseurs
-    { id: 3, nom: "João Cancelo", poste: "Défenseur", nationalite: "Portugal", numero: 2, age: 31, note: 83, image: "img/Cancelo.png" },
+    { id: 3, nom: "João Cancelo", poste: "Défenseur", nationalite: "Portugal", numero: 2, age: 31, note: 83, image: "img/cancelo.png" },
     { id: 4, nom: "Alejandro Balde", poste: "Défenseur", nationalite: "Espagne", numero: 3, age: 22, note: 81, image: "img/balde.png" },
     { id: 5, nom: "Ronald Araújo", poste: "Défenseur", nationalite: "Uruguay", numero: 4, age: 26, note: 85, image: "img/Araujo.png" },
-    { id: 6, nom: "Pau Cubarsí", poste: "Défenseur", nationalite: "Espagne", numero: 5, age: 19, note: 82, image: "img/Cubarsi.png" },
+    { id: 6, nom: "Pau Cubarsí", poste: "Défenseur", nationalite: "Espagne", numero: 5, age: 19, note: 82, image: "img/cubarsi.png" },
     { id: 7, nom: "Andreas Christensen", poste: "Défenseur", nationalite: "Danemark", numero: 15, age: 29, note: 81, image: "img/andreas-christensen.png" },
     { id: 8, nom: "Gerard Martín", poste: "Défenseur", nationalite: "Espagne", numero: 18, age: 24, note: 76, image: "img/gerard-martin.png" },
     { id: 9, nom: "Jules Koundé", poste: "Défenseur", nationalite: "France", numero: 23, age: 27, note: 86, image: "img/jules-kounde.png" },
@@ -22,14 +22,14 @@ const joueursInitiaux = [
     { id: 14, nom: "Fermín López", poste: "Milieu", nationalite: "Espagne", numero: 16, age: 22, note: 82, image: "img/Fermin.png" },
     { id: 15, nom: "Marc Casadó", poste: "Milieu", nationalite: "Espagne", numero: 17, age: 22, note: 77, image: "img/casado.png" },
     { id: 16, nom: "Dani Olmo", poste: "Milieu", nationalite: "Espagne", numero: 20, age: 27, note: 86, image: "img/olmo.png" },
-    { id: 17, nom: "Frenkie de Jong", poste: "Milieu", nationalite: "Pays-Bas", numero: 21, age: 28, note: 86, image: "img/Frenkie De Jong.png" },
-    { id: 18, nom: "Marc Bernal", poste: "Milieu", nationalite: "Espagne", numero: 22, age: 18, note: 73, image: "img/Marc Bernal.png" },
+    { id: 17, nom: "Frenkie de Jong", poste: "Milieu", nationalite: "Pays-Bas", numero: 21, age: 28, note: 86, image: "img/Frenkie-De-Jong.png" },
+    { id: 18, nom: "Marc Bernal", poste: "Milieu", nationalite: "Espagne", numero: 22, age: 18, note: 73, image: "img/marc-bernal.png" },
 
     // Attaquants
     { id: 19, nom: "Ferran Torres", poste: "Attaquant", nationalite: "Espagne", numero: 7, age: 25, note: 82, image: "img/ferran-torres.png" },
-    { id: 20, nom: "Robert Lewandowski", poste: "Attaquant", nationalite: "Pologne", numero: 9, age: 37, note: 90, image: "img/Lewandowski.png" },
+    { id: 20, nom: "Robert Lewandowski", poste: "Attaquant", nationalite: "Pologne", numero: 9, age: 37, note: 90, image: "img/lewandowski.png" },
     { id: 21, nom: "Lamine Yamal", poste: "Attaquant", nationalite: "Espagne", numero: 10, age: 18, note: 89, image: "img/lamine-yamal.png" },
-    { id: 22, nom: "Raphinha", poste: "Attaquant", nationalite: "Brésil", numero: 11, age: 29, note: 87, image: "img/Raphinha.png" },
+    { id: 22, nom: "Raphinha", poste: "Attaquant", nationalite: "Brésil", numero: 11, age: 29, note: 87, image: "img/raphinha.png" },
     { id: 23, nom: "Marcus Rashford", poste: "Attaquant", nationalite: "Angleterre", numero: 14, age: 28, note: 82, image: "img/Marcus Rashford.png" },
     { id: 24, nom: "Roony Bardghji", poste: "Attaquant", nationalite: "Suède", numero: 19, age: 20, note: 74, image: "img/roony.png" }
 ];
