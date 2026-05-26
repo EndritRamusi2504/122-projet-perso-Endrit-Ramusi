@@ -49,10 +49,10 @@ J'ai utilisé deux outils d'IA tout au long du projet :
 Voici quelques exemples de prompts que j'ai utilisés durant le projet ( bien sûr j'ai demandé a l'IA de reformuler les prompts pour les rendre plus clairs et précis car si je copier coller ce que j'avais écris même moi j'aurais du mal a comprendre ) :
  
 Débogage :
-"J'ai une erreur `Cannot read properties of undefined` dans ma fonction d'affichage des joueurs. Voici mon code : [code]. Qu'est-ce qui ne va pas ?"
+"J'ai une erreur dans ma fonction d'affichage des joueurs. Voici mon code : [code]. Qu'est-ce qui ne va pas ?"
  
 Restructuration du code :
-"Mon code JavaScript pour afficher et filtrer les joueurs est tout dans un seul fichier et devient difficile à lire. Comment puis-je mieux l'organiser ?"
+"Restructure tout mon code et rends le lisible, reorganise le ?"
 
 Aide à la compréhension :
 "Comment faire une recherche en temps réel sur une liste d'objets en JavaScript ? Je veux filtrer les joueurs par nom au fur et à mesure que l'utilisateur tape."
